@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>The Jazz Society</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="scripts/script.js"></script>
+    </head>
+
+    <body>
+        <!--
+        fullmenu div tag allows the top bar to move while scrolling
+    -->
+        <div id="fullMenu">
+            <header>
+                <div id = "headDiv">
+                    <img id = "jazzlogo"src="images/jazzlogowhite.svg" alt="Jazz logo"><p>RGU Jazz Society</p>
+                </div>
+            </header>
+        </div>
+        <div id="login">
+            <fieldset>
+                <label for="email">Login:</label>
+                <input type="text" name="email" value="Email"/>
+                <input type="text" name="password" value="Password"/>
+                <button type="button" onclick="login()">Login</button>
+            </fieldset> 
+        </div>
+    <main>
+        <div>
+            <nav>
+                <ul class = "menu">
+                    <a href="index.html">Home</a>
+                    <a href="img_gallery.html">Image Gallery</a>
+                    <a href="contact_us.html">Contact Us</a>
+                    <a href="current_members.html">Current Members</a>
+                    <a href="event_calendar.html">Event Calendar</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="spotlight.html">Spotlight</a>
+                </ul>
+            </nav>
+        </div>
+            <div id="moving">
+                <div id = "topblock">
+                    <h>Spotlight</h>
+                </div>
+            </div>
+        <div id = "topbox">
+            <p3>
+                Our Jazz video spotlight for this month:
+            </p3><br><br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9N4Dx9aRFRI?si=QlzptmXx2lVTqoMB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div id="margin">
+            <!--embedded spotify links, can be made by clicking share - embed-->
+            <p3>Our top picks for this month:</p3><br><br>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2BuIAKijtji4xpab2QCTBv?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><br><br>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2xm9ihELo6xwrRKrBbPql9?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><br><br>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7dOz8RrPWP9UgJ8X8p1vU7?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div id="topbox">
+            <p3>Want to reccomend something for the spotlight? Let us know in the form below!</p3>
+        </div>
+        
+        <form name="event">
+            <div id="form_outcome"> 
+            <fieldset id="spotlights">
+                <label for="spotlight_type">Type of media: </label>
+                <!--selection used instead of input, user can choose from three different types-->
+                <select name="spotlight_type" id="link_types">
+                    <option value="Youtube Video">Youtube video</option>
+                    <option value="Spotify">Spotify link</option>
+                    <option value="Soundcloud">Soundcloud link</option>
+                </select> <br><br>
+                <label for="spotlight_link">Link: </label>
+                <input type="text" name="spotlight_link" cols="60" rows="1"/><br><br>
+                <label for="comment">Tell us why:</label><br>
+                <textarea type="text" name="comment" cols="100" rows="10"></textarea> <br/>
+                <!--submit_spotlight similar to event but only checks if the link box has been filled -->
+                <button type="button" onclick = "submit_spotlight()">Submit</button>
+            </fieldset>
+            </div>
+        </form>
+            <div id = "moving">
+                <footer>Text generated by ChatGPT, Images generated by Adobe Firefly<br>Copyright Kane Farquharson 2024</footer>
+            </div>
+        </main>
+    </body>
+</html>

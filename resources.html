@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>The Jazz Society</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="scripts/script.js"></script>
+    </head>
+
+    <body>
+         <!--
+        fullmenu div tag allows the top bar to move while scrolling
+    -->
+        <div id="fullMenu">
+            <header>
+                <div id = "headDiv">
+                    <img id = "jazzlogo"src="images/jazzlogowhite.svg" alt="Jazz logo"><p>RGU Jazz Society</p>
+                </div>
+            </header>
+        </div>
+        <div id="login">
+            <fieldset>
+                <label for="email">Login:</label>
+                <input type="text" name="email" value="Email"/>
+                <input type="text" name="password" value="Password"/>
+                <button type="button" onclick="login()">Login</button>
+            </fieldset> 
+        </div>
+    <main>
+        <div>
+            <nav>
+                <ul class = "menu">
+                    <a href="index.html">Home</a>
+                    <a href="img_gallery.html">Image Gallery</a>
+                    <a href="contact_us.html">Contact Us</a>
+                    <a href="current_members.html">Current Members</a>
+                    <a href="event_calendar.html">Event Calendar</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="spotlight.html">Spotlight</a>
+                </ul>
+            </nav>
+        </div>
+            <div id="moving">
+                <!--Topblock tag adds a large area for the title of the page-->
+                <div id = "topblock">
+                    <h>Recources</h>
+                </div>
+            </div>
+        <!--topbox tag gives text an opaque gray bar and centers text.-->
+        <div id = "topbox">
+            <p1>
+                Here you'll find some useful resources we reccomend for playing jazz on guitar!
+            </p1>
+        </div>
+        <div id="margin">
+            <p3>Our Favourite Guitar Tabs</p3><br>
+            <!--different side class than aside to remove background-->
+            <div class="side">
+                <!--
+                NOT MY TABS, tabs are from here:
+                https://musescore.com/user/27417597/scores/5478472
+                -->
+                <!--highligh and delight adds and removes an invisible border to make image seem like its enlarging-->
+                <img id="sideimage" style="border: thick solid #FFFFFF00;" onmouseout="delight(this)" onmouseover="highlight(this)" src="images/flymetothemoon.png" alt="Fly me to the moon image">
+                <div class="sidetext">
+                    <p3>Fly me to the moon - Frank Sinatra</p3><br>
+                    <p1>Arrangement by Gerald Freislich</p1><br>
+                    <a href="https://musescore.com/user/27417597/scores/5478472">Find it here on musescore.com!</a>
+                </div>
+            </div>
+            <div class="side">
+                <!--
+                NOT MY TABS, tabs are from here:
+                https://musescore.com/user/25748531/scores/4811048
+                -->
+                <img id="sideimage" style="border: thick solid #FFFFFF00;" onmouseout="delight(this)" onmouseover="highlight(this)" src="images/bluebossa.png" alt="Blue Bossa image">
+                <div class="sidetext">
+                    <p3>Blue Bossa - Joe Henderson</p3><br>
+                    <p1>Arrangement by Daniele Cordisco</p1><br>
+                    <a href="https://musescore.com/user/25748531/scores/4811048">Find it here on musescore.com!</a>
+                </div>
+            </div>
+            <div class="side">
+                <!--
+                NOT MY TABS, tabs are from here:
+                https://musescore.com/user/25748531/scores/4811048
+                -->
+                <img id="sideimage" style="border: thick solid #FFFFFF00;" onmouseout="delight(this)" onmouseover="highlight(this)" src="images/take-the-a-train-1.png" alt="Take the a train image">
+                <div class="sidetext">
+                    <p3>Take the A train - Duke Ellington</p3><br>
+                    <p1>Arrangement by Dirk Laukens</p1><br>
+                    <a href="https://www.jazzguitar.be/blog/take-the-a-train/">Find it here on jazzguitar.be!</a>
+                </div>
+            </div>
+            <br><br>
+            <p3>Our Favourite Guitars!</p3><br><br>
+            <!--
+            carousel from here:
+            https://getbootstrap.com/docs/5.3/components/carousel/#:~:text=We%20recommend%20using%20elements,with%20role%3D"button"%20.&text=Carousels%20don%27t%20automatically%20normalize,styles%20to%20appropriately%20size%20content.
+            -->
+            <div id = "carouselbackground">
+                <div id="home-carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <!-- Wrapper -->
+                    <div class="carousel-inner">
+                        <!-- Item 1 -->
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="images/epiphonecherry.jpg">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="color:black;">Epiphone ES-339</h5>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/ibanez-artcore.jpg">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="color:black;">Ibanez Artcore AS73-TBC</h5>
+                            </div>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/squiertele.jpg">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="color:black;">Squier Affinity Tele</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#home-carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#home-carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                </div>
+            </div>
+        </div>
+            <div id = "moving">
+                <footer>Text generated by ChatGPT, Images generated by Adobe Firefly<br>Copyright Kane Farquharson 2024</footer>
+            </div>
+        </main>
+    </body>
+</html>

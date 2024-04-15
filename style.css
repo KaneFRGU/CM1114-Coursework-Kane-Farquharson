@@ -1,0 +1,333 @@
+
+
+main{
+    background-color: black;
+    animation: slideIn ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-image: url("images/website background.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#headDiv{
+    font-weight: bold;
+    font-family: century-gothic, sans-serif;
+    color: #FFFFFF;
+    background-color: #F13030;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 40;
+    padding-left: 3%;
+}
+
+h{
+    font-size: 400%;
+    font-family: century-gothic, sans-serif;
+    display: block;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    color: #FFFFFF;
+}
+
+#jazzlogo{
+    width: 10%;
+    height: 10%;
+    float: right;
+}
+
+#login{
+    font-family: century-gothic, sans-serif;
+    padding-left: 3%;
+    padding-bottom: 3%;
+    display: block;
+    background-color: #F13030;
+}
+
+a{
+    font-family: century-gothic, sans-serif;
+    color: #ffffff; 
+}
+
+p1{
+    font-family: century-gothic, sans-serif;
+    color: #ffffff;
+}
+p2{
+    text-align: center;
+    font-family: century-gothic, sans-serif;
+    font-size: 130%;
+    color: #ffffff;
+}
+p3{
+    text-align: center;
+    font-family: century-gothic, sans-serif;
+    font-size: 180%;
+    color: #ffffff;
+}
+li{
+    font-family: century-gothic, sans-serif;
+    color: #ffffff;
+}
+/*menu*/
+#fullMenu{
+    top:0rem;
+    align-self: flex-start;
+    position: sticky;
+    z-index: 5;
+}
+
+.menu{
+    z-index: 3;
+    overflow: hidden;
+    background-color:   #5A0001;
+    align-items: center;
+    text-align: center;
+}
+
+.menu a{
+    color: white;
+    padding: 2% 4%;
+    text-decoration: none;
+    font-size: 17px;
+    display: inline-block;
+    align-items: center;
+}
+
+.menu a:hover{
+    background-color: #ffffff;
+    color: black;
+}
+
+.menu :visited{
+    color: #FFFFFF;
+}
+
+#moving{
+    animation: moveIn ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+footer{
+    font-family: verdana;
+    font-size: 60%;
+    color: #FFFFFF;
+}
+
+/*animations*/
+@keyframes slideIn{
+    0%{
+        background-position-x: 1000px;
+        opacity: 0;
+    }
+    100%{
+        background-position-x: 0px;
+        opacity: 1;
+    }
+}
+@keyframes moveIn{
+    0%{
+        padding-top: 3%;
+        opacity: 0;
+    }
+    100%{
+        padding-top: 1%;
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    0% {
+    opacity: 0;
+    }
+
+    100% {
+    opacity: 1;
+    }
+}
+
+
+
+/*
+    Table styles
+*/
+table{
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: century-gothic, sans-serif;
+    border-collapse:separate;
+    font-size: larger;
+    float: right;
+    vertical-align: center;
+    align-items: center;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+table td, table th{
+    border: 2px solid #f0f0f0;
+    width: 12.5%;
+    font-size: 15px;
+    padding: 2%;
+}
+
+table tr:nth-child(even){
+    background-color: #F2F2F2;
+}
+
+table tr:hover{
+    background-color: #FFFFFF;
+}
+
+table th{
+    background-color: #FFFFFF;
+    color: black;
+}
+/*Centers carousel in middle of page*/
+#home-carousel{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+/*
+    form styles
+*/
+form{
+    background-color: #42424250;
+    color: #FFFFFF;
+    display: block;
+    padding: 2%;
+}
+
+fieldset{
+    color: #FFFFFF;
+}
+
+#margin{
+    margin: 5%;
+}
+
+#topbox{
+    display: block;
+    font-family: century-gothic, sans-serif;
+    text-align: center;
+    color:#FFFFFF;
+    background-color: #42424290;
+    padding: 4%;
+}
+#gallery{
+    background-color: #42424290;
+}
+#galleryitem1{
+    border: thick solid #FFFFFF00;
+    display: inline-block;
+    width: 22.5%;
+    margin: 5%; 
+}
+#carouselbackground{
+    padding: 5%;
+    display: block;
+    background-color: #42424290;
+}
+.column{
+    float: left;
+    width: 50%;
+}
+.twitter-timeline{
+    width: 80%;
+    float:right
+}
+
+/*
+    member styles, two different ones for alternating background colours
+*/
+
+#members{
+    width: 20%;
+    margin: 4%;
+}
+
+.memberimage{
+    display: inline-block;
+    vertical-align: top;
+    background-color: #42424290;
+}
+.membertext{
+    display:inline-block
+}
+#memberseven{
+    width: 20%;
+    margin: 4%;
+}
+
+.memberimageeven{
+    display: inline-block;
+    vertical-align: top;
+    background-color: #42424250;
+}
+.membertexteven{
+    display:inline-block
+}
+
+/*
+    aside tags make text positioned on the middle of the side of an image
+*/
+
+#asideimage{
+    width: 20%;
+    margin: 4%;
+}
+
+.aside{
+    display: inline-block;
+    vertical-align: top;
+    background-color: #42424290;
+}
+.asidetext{
+    display:inline-block
+}
+a3{
+    text-align: center;
+    font-family: century-gothic, sans-serif;
+    font-size: 140%;
+    color: #ffffff;
+}
+a1{
+    text-align: center;
+    font-family: century-gothic, sans-serif;
+    font-size: 90%;
+    color: #ffffff;
+}
+/*
+    side tags are the same as aside but without a background
+*/
+#sideimage{
+    width: 20%;
+}
+
+.sideimage{
+    display: inline-block;
+    vertical-align: top;
+    margin: 4%;
+    
+    
+}
+.sidetext{
+    display:inline-block;
+    margin: 4%;
+}
+
+h5{
+    font-family: century-gothic, sans-serif;
+    font-weight: bold;
+}
+
+/*links are purple when visited*/
+a{
+    color: white;
+}
+a:visited{
+    color: purple;
+}

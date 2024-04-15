@@ -1,0 +1,131 @@
+<!--
+Threat Model
+Threat Source: External
+Threat Agent: Human
+Threat Intention: Intentional
+Threat Motivation: Embarrassment of the society
+Threat Impact: Data theft of logins, Identity theft of existing logins on the website.
+Threat Mitigation: 2FA in place, email sent after every login attempt.
+-->
+<html>
+    <!--
+        All images and text are AI generated
+        Images: https://firefly.adobe.com/?ff_channel=adobe_com&ff_campaign=ffly_homepage&ff_source=firefly_seo
+        Text: https://chat.openai.com
+    -->
+    <head>
+        <meta charset="utf-8">
+        <title>The Jazz Society</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!--link to Adobe Fonts, lets me use Century Gothic font-->
+        <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="scripts/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </head>
+
+    <!--
+        fullmenu div tag allows the top bar to move while scrolling
+    -->
+        <div id="fullMenu">
+            <header>
+                <div id = "headDiv">
+                    <img id = "jazzlogo"src="images/jazzlogowhite.svg" alt="Jazz logo"><p>RGU Jazz Society</p>
+                </div>
+            </header>
+        </div>
+    <!--
+        login bar seperate from fullmenu, doesnt move when scrolling
+    -->
+        <div id="login">
+            <fieldset>
+                <label for="email">Login:</label>
+                <input type="text" name="email" value="Email"/>
+                <input type="text" name="password" value="Password"/>
+                <button type="button" onclick="login()">Login</button>
+            </fieldset> 
+        </div>
+        <main>
+        <div>
+            <nav>
+                <!--
+                    menu class uses inline blocks
+                -->
+                <ul class = "menu">
+                    <a href="index.html">Home</a>
+                    <a href="img_gallery.html">Image Gallery</a>
+                    <a href="contact_us.html">Contact Us</a>
+                    <a href="current_members.html">Current Members</a>
+                    <a href="event_calendar.html">Event Calendar</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="spotlight.html">Spotlight</a>
+                </ul>
+            </nav>
+        </div>
+        <body>
+            <!--moving tag uses css animations to "float in" text-->
+            <div id="moving">
+                <div id="margin">
+           
+                    <p3>Welcome to the RGU Jazz Society!</p3><br><br>    
+                    <p1>
+                        Welcome to Robert Gordon University's Jazz Society – where rhythm and melody unite in a dynamic celebration of jazz. 
+                    </p1><br><br>
+                    <p1>
+                        Whether you're a seasoned enthusiast or a curious newcomer, our inclusive community invites you to join in the joy of jazz. 
+                    </p1><br>
+                    <p1>
+                        From lively jam sessions to engaging workshops, we're your ticket to an unforgettable musical experience. 
+                    </p1><br>
+                    <p1>    
+                        Come be a part of our jazz-inspired camaraderie and let the music speak to your soul.
+                    </p1><br><br><br>
+                    <p2>
+                        Our favourite Jazz playlist!
+                    </p2><br>
+                    <!--
+                        Video is from Unwind Station - No Copyright Music
+                        https://www.youtube.com/@unwindstation-nocopyrightm1747
+                    -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/DGTFqaQh26w?si=nVknM8qJVNk949mu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <br><br><br><br>
+                    <p3>News</p3><br><br>
+                    <!--aside selectors align text to the middle of the side of an image a-->
+                    <div class = "aside">
+                        <img id = "asideimage" src="images/Firefly college jazz band being taught by older man 49463.jpg" alt = "Teacher">
+                        <div class="asidetext">
+                            <a3>Limmy H visits us!</a3><br>
+                            <a1>Famous jazz guitarist Limmy H comes to give us a rundown of his carrer in writing Jazz.</a1><br>
+                            <a1>He also gave us a crash course on playing jazz in his style, as well as playing some of his pieces for us.</a1>
+                        </div>
+                    </div>
+                    <br><br>
+                    <!--column class splits page into two equal halves-->
+                    <div class="column">
+                        <ul>
+                            <li>Spring Concert Series: Join us for an unforgettable evening of jazz fusion at the university amphitheater.</li>
+                            <li>Student Spotlight: Meet Timmy, our talented pianist, and learn about his journey in jazz.</li>
+                            <li>Guest Artist Workshop: Renowned trumpeter Marcus Johnson to lead masterclass for jazz students.</li>
+                            <li>Jam Session: Calling all musicians! Don't miss our weekly jam session at the student lounge.</li>
+                            <li>Album Fundraiser: Support our debut album project by purchasing exclusive band merchandise.</li>
+                            <li>Community Engagement: Conceptual College Jazz Band partners with local schools to promote music education.</li>
+                            <li>Virtual Performance: Tune in to our live stream concert for an immersive jazz experience from home.</li>
+                            <li>Faculty Feature: Get to know Professor Davis, our jazz ensemble director, and his vision for the band.</li>
+                            <li>Alumni Update: Catch up with former members and see where their jazz journey has taken them.   </li>                         
+                            <li>Audition Announcement: Interested in joining the band? Stay tuned for details on upcoming auditions.</li>
+                        </ul>
+                
+                    </div>
+                    <div class="column">
+                        <!--Twitter charges you money to display its embeded code on websites now, leaving it here as a placeholder-->
+                        <a class="twitter-timeline" href="https://twitter.com/eJazzNews?ref_src=twsrc%5Etfw">Tweets by eJazzNews</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>s
+                </div>
+            </div>
+        <div id = "moving">
+        <footer>Text generated by ChatGPT, Images generated by Adobe Firefly<br>Copyright Kane Farquharson 2024</footer>
+        </div>
+        </main>
+    </body>
+</html>
